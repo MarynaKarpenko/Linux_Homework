@@ -1,9 +1,12 @@
 #!/bin/bash
 
-export USER=Maryna
+export USER=$(whoami)
+export USER2=Maryna
 
 date
 
 echo Hello $USER!
+echo Hello $USER2
 
 pwd
+
