@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export USER=Maryna
+
+date
+
+echo Hello $USER!
+
+pwd
