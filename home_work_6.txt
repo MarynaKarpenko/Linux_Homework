@@ -1,0 +1,22 @@
+#!/bin/bash
+
+date +'%T'
+ps -ef | wc -l
+
+for run in {1..10}
+do
+echo $run
+#sleep .5
+sleep .2
+done
+
+cat /proc/cpuinfo >> file2.txt
+
+cat /etc/os-release | grep NAME | head -1
+
+cat /etc/os-release | grep NAME | head -1 | sed 's/NAME="//' | sed 's/Linux"//'
+
+for run in {50..100}
+do
+touch ${run}.txt
+done
