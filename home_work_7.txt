@@ -1,0 +1,21 @@
+Задание 1
+
+#!/bin/bash
+
+mkdir -p /opt/090523_morning/marina_karpenko/020823
+
+cd /opt/090523_morning/marina_karpenko/020823
+
+
+for run in {1..10}
+do
+my_date=$(date +"%d.%m.%y")
+touch "${run}_${my_date}.txt"
+done
+
+echo "DONE"
+
+Задание 2
+
+*/15 * * * * /opt/090523_morning/marina_karpenko/script6.sh
+
